@@ -91,8 +91,8 @@ public class SaabTrackData {
 
                     // we can use WKT (well-known-text) to represent geometries
                     // note that we use longitude first ordering
-                    double longitude = Double.parseDouble(record.get(3));
-                    double latitude = Double.parseDouble(record.get(4));
+                    double latitude = Double.parseDouble(record.get(3));
+                    double longitude = Double.parseDouble(record.get(4));
                     builder.set("loc", "POINT (" + longitude + " " + latitude + ")");
 
                     // be sure to tell GeoTools explicitly that we want to use the ID we provided
